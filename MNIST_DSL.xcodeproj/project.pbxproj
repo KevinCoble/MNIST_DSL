@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E5131AF2F21E5B300923B97 /* MPSGraphDSL in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5131AE2F21E5B300923B97 /* MPSGraphDSL */; };
+		0E046D762F4A946600740EFC /* MPSGraphDSL in Frameworks */ = {isa = PBXBuildFile; productRef = 0E046D752F4A946600740EFC /* MPSGraphDSL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5131AF2F21E5B300923B97 /* MPSGraphDSL in Frameworks */,
+				0E046D762F4A946600740EFC /* MPSGraphDSL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = MNIST_DSL;
 			packageProductDependencies = (
-				0E5131AE2F21E5B300923B97 /* MPSGraphDSL */,
+				0E046D752F4A946600740EFC /* MPSGraphDSL */,
 			);
 			productName = MNIST_DSL;
 			productReference = 0E51319B2F21C7E400923B97 /* MNIST_DSL.app */;
@@ -101,7 +101,7 @@
 			mainGroup = 0E5131922F21C7E400923B97;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				0E5131AD2F21E5B300923B97 /* XCLocalSwiftPackageReference "../MPSGraphDSL/MPSGraphDSL" */,
+				0E046D742F4A946600740EFC /* XCLocalSwiftPackageReference "../MPSGraphDSL/MPSGraphDSL" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0E51319C2F21C7E400923B97 /* Products */;
@@ -356,14 +356,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		0E5131AD2F21E5B300923B97 /* XCLocalSwiftPackageReference "../MPSGraphDSL/MPSGraphDSL" */ = {
+		0E046D742F4A946600740EFC /* XCLocalSwiftPackageReference "../MPSGraphDSL/MPSGraphDSL" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../MPSGraphDSL/MPSGraphDSL;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E5131AE2F21E5B300923B97 /* MPSGraphDSL */ = {
+		0E046D752F4A946600740EFC /* MPSGraphDSL */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MPSGraphDSL;
 		};

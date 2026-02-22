@@ -16,7 +16,7 @@ struct MNISTGraph {
     
     init() {
         graph = Graph(batchSize: batchSize) {
-            PlaceHolder(shape: [28, 28], name: "input")
+            PlaceHolder(shape: [28, 28], type: .float32, name: "input")
             ConvolutionLayer(input: "input", kernelHeight: 5, kernelWidth: 5, numFilters: 32, activationFunction: .relu, heightStride: 1, widthStride: 1, name: "conv0")
                 .leaveFilterDimensionLast()         //  Filter in channel dimension for pooling
                 .learnWithRespectTo("loss")
@@ -32,7 +32,7 @@ struct MNISTGraph {
                 .targetForModes(["learn"])
             SoftMax(name: "result")
                 .targetForModes(["infer"])
-            PlaceHolder(shape: [10], modes: ["learn"], name: "labels")
+            PlaceHolder(shape: [10], type: .float32, modes: ["learn"], name: "labels")
             SoftMaxCrossEntropy(input: "fc1", labels: "labels", reductionType: .sum, name: "loss")
                 .targetForModes(["learn"])
             Learning(learningRate: 0.01, learningModes: ["learn"])
